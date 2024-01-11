@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 5px 5px 5px gray;
+    }
+
+    .grid-container {
+        margin: 20px;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto; 
+            grid-gap: 8px;
+            text-align: center;
+        }
+        .box {
+            height: 60px;
+            font-size: 12px;
+        }
+
+    .red {
+        background: linear-gradient(45deg, red, rgb(129, 107, 107));
+        box-shadow: 3px 3px 3px #121212;
+    }
+
+    .orange {
+        background: linear-gradient(45deg, rgb(253, 114, 0), rgb(192, 138, 100));
+        box-shadow: 3px 3px 3px #121212;
+    }
+
+    .ice-blue {
+        background: linear-gradient(45deg, aqua, rgb(46, 163, 184));
+        box-shadow: 3px 3px 3px #121212;
+    }
+
+    .blue {
+        background: linear-gradient(45deg, rgb(18, 81, 208), rgb(130, 154, 229));
+        box-shadow: 3px 3px 3px #121212;
+    }
+
+    .pink {
+        background: linear-gradient(45deg, rgb(208, 18, 107), rgb(190, 82, 194));
+        box-shadow: 3px 3px 3px #121212;
+    }
+
+    .low-red {
+        background: linear-gradient(45deg, rgb(124, 40, 40), rgb(217, 148, 148));
+        box-shadow: 3px 3px 3px #121212;
+    }
+
+    .light-green {
+        background: linear-gradient(45deg, rgb(28, 170, 92), rgb(148, 193, 173));
+        box-shadow: 3px 3px 3px #121212;
+    }
+
+    .green {
+        background: linear-gradient(45deg, rgb(4, 249, 45), rgb(117, 199, 141));
+        box-shadow: 3px 3px 3px #121212;
+    }
+    .span1{
+        grid-column-start: 2;
+        grid-column-end: 18;
+    }
+    .span2{
+        grid-column-start: 3;
+        grid-column-end: 13;
+    }
+    .span3{
+        grid-column-start: 3;
+        grid-column-end: 13;
+    }
+</style>
+
+<body>
+    <h1 class="heading">Periodic Table</h1>
+    <div class=" grid-container">
+
+        <div class="box red">
+            <p>1</p>
+            <h1>H</h1>
+            <p>Hydrogen</p>
+        </div>
+
+        <div class="box white span1" colspan="16">
+            <!-- White space cover in it  -->
+        </div>
+        <div class="box red">
+            <p>2</p>
+            <h1>He</h1>
+            <p>helium</p>
+        </div>
+        <div class="box red">
+            <p>3</p>
+            <h1>Li</h1>
+            <p>lithum</p>
+        </div>
+
+        <div class="box orange">
+            <p>4</p>
+            <h1>Be</h1>
+            <p>bythem</p>
+        </div>
+
+         <div class="box  white span2" >
+            <!-- White space cover in it  -->
+        </div>
+
+        <div class="box green">
+            <p>5</p>
+            <h1>B</h1>
+            <p>bocvon</p>
+        </div>
+
+        <div class="box blue">
+            <p>6</p>
+            <h1>C</h1>
+            <p>bolium</p>
+        </div>
+
+        <div class="box blue">
+            <p>7</p>
+            <h1>N</h1>
+            <p>nitrogen</p>
+        </div>
+
+        <div class="box blue">
+            <p>8</p>
+            <h1>O</h1>
+            <p>Oxygen</p>
+        </div>
+
+        <div class="box orange">
+            <p>9</p>
+            <h1>F</h1>
+            <p>flurion</p>
+        </div>
+
+        <div class="box orange">
+            <p>10</p>
+            <h1>Ne</h1>
+            <p>neon</p>
+        </div>
+
+
+        <div class="box red">
+            <p>11</p>
+            <h1>Na</h1>
+            <p>ithen</p>
+        </div>
+
+        <div class="box orange">
+            <p>4</p>
+            <h1>Be</h1>
+            <p>bythem</p>
+        </div>
+
+
+        <!-- White spaces covered -->
+        <div class="box  white span3">
+        </div>
+
+        <div class="box low-red">
+            <p>13</p>
+            <h1>Ga</h1>
+            <p>almunium</p>
+        </div>
+
+        <div class="box green">
+            <p>14</p>
+            <h1>Si</h1>
+            <p>alicon</p>
+        </div>
+
+        <div class="box blue">
+            <p>15</p>
+            <h1>P</h1>
+            <p>potatium</p>
+        </div>
+
+        <div class="box blue">
+            <p>16</p>
+            <h1>S</h1>
+            <p>sulfer</p>
+        </div>
+
+        <div class="box orange">
+            <p>17</p>
+            <h1>CI</h1>
+            <p>clorine</p>
+        </div>
+
+        <div class="box orange">
+            <p>15</p>
+            <h1>Kr</h1>
+            <p>Ar</p>
+        </div>
+
+
+        <div class="box red">
+            <p>19</p>
+            <h1>K</h1>
+            <p>poyium</p>
+        </div>
+
+        <div class="box orange">
+            <p>20</p>
+            <h1>Ca</h1>
+            <p>zadoium</p>
+        </div>
+
+        <div class="box blue">
+            <p>21</p>
+            <h1>Sc</h1>
+            <p>Sodium</p>
+        </div>
+
+        <div class="box  blue">
+            <p>22</p>
+            <h1>Ti</h1>
+            <p>ilutim</p>
+        </div>
+
+        <div class="box  blue">
+            <p>23</p>
+            <h1>V</h1>
+            <p>vidoutm</p>
+        </div>
+
+        <div class="box  blue">
+            <p>24</p>
+            <h1>Cr</h1>
+            <p>chroidum</p>
+        </div>
+
+        <div class="box  blue">
+            <p>25</p>
+            <h1>Mn</h1>
+            <p>magnisum</p>
+        </div>
+
+        <div class="box  blue">
+            <p>26</p>
+            <h1>Fe</h1>
+            <p>iron</p>
+        </div>
+
+        <div class="box blue">
+            <p>27</p>
+            <h1>Co</h1>
+            <p>cobalt</p>
+        </div>
+
+        <div class="box blue">
+            <p>28</p>
+            <h1>Ni</h1>
+            <p>nickl</p>
+        </div>
+
+        <div class="box blue">
+            <p>29</p>
+            <h1>Cu</h1>
+            <p>copper</p>
+        </div>
+
+        <div class="box  blue">
+            <p>30</p>
+            <h1>Zn</h1>
+            <p>zinc</p>
+        </div>
+
+        <div class="box low-red">
+            <p>31</p>
+            <h1>Ga</h1>
+            <p>galium</p>
+        </div>
+
+        <div class="box green">
+            <p>32</p>
+            <h1>Ge</h1>
+            <p>gimentium</p>
+        </div>
+
+        <div class="box green">
+            <p>33</p>
+            <h1>As</h1>
+            <p>sodium</p>
+        </div>
+
+        <div class="box orange">
+            <p>34</p>
+            <h1>Se</h1>
+            <p>sodiuem</p>
+        </div>
+
+        <div class="box orange">
+            <p>35</p>
+            <h1>Br</h1>
+            <p>toduim</p>
+        </div>
+
+        <div class="box orange">
+            <p>36</p>
+            <h1>Kr</h1>
+            <p>kypon</p>
+        </div>
+
+
+        <div class="box red">
+            <p>37</p>
+            <h1>Rb</h1>
+            <p>radium</p>
+        </div>
+
+        <div class="box orange">
+            <p>38</p>
+            <h1>Sr</h1>
+            <p>satoium</p>
+        </div>
+
+        <div class="box blue">
+            <p>39</p>
+            <h1>Y</h1>
+            <p>yodum</p>
+        </div>
+
+        <div class="box  blue">
+            <p>40</p>
+            <h1>Zr</h1>
+            <p>zodium</p>
+        </div>
+
+        <div class="box  blue">
+            <p>41</p>
+            <h1>Nb</h1>
+            <p>nodium</p>
+        </div>
+
+        <div class="box  blue">
+            <p>42</p>
+            <h1>Mo</h1>
+            <p>moudium</p>
+        </div>
+
+        <div class="box  blue">
+            <p>43</p>
+            <h1>Tc</h1>
+            <p>tifum</p>
+        </div>
+
+        <div class="box  blue">
+            <p>44</p>
+            <h1>Ru</h1>
+            <p>radium</p>
+        </div>
+
+        <div class="box blue">
+            <p>45</p>
+            <h1>Rh</h1>
+            <p>Rahium</p>
+        </div>
+
+        <div class="box blue">
+            <p>46</p>
+            <h1>Pd</h1>
+            <p>platum</p>
+        </div>
+
+        <div class="box blue">
+            <p>47</p>
+            <h1>Ag</h1>
+            <p>silver</p>
+        </div>
+
+        <div class="box  blue">
+            <p>48</p>
+            <h1>Cd</h1>
+            <p>calcium</p>
+        </div>
+
+        <div class="box low-red">
+            <p>49</p>
+            <h1>In</h1>
+            <p>Indium</p>
+        </div>
+
+        <div class="box low-red">
+            <p>50</p>
+            <h1>Sn</h1>
+            <p>Fin</p>
+        </div>
+
+        <div class="box green">
+            <p>51</p>
+            <h1>Sb</h1>
+            <p>aryopum</p>
+        </div>
+
+        <div class="box green">
+            <p>52</p>
+            <h1>Te</h1>
+            <p>teklum</p>
+        </div>
+
+        <div class="box orange">
+            <p>53</p>
+            <h1>I</h1>
+            <p>iodin</p>
+        </div>
+
+        <div class="box orange">
+            <p>54</p>
+            <h1>Xe</h1>
+            <p>radium</p>
+        </div>
+
+
+        <div class="box red">
+            <p>55</p>
+            <h1>Cs</h1>
+            <p>calcium</p>
+        </div>
+
+        <div class="box orange">
+            <p>56</p>
+            <h1>Ba</h1>
+            <p>batidum</p>
+        </div>
+
+        <div class="box light-green">
+            <p>57-71</p>
+            <h1></h1>
+            <p>intidoium</p>
+        </div>
+
+        <div class="box  blue">
+            <p>72</p>
+            <h1>Hf</h1>
+            <p>tidivuim</p>
+        </div>
+
+        <div class="box  blue">
+            <p>73</p>
+            <h1>Ta</h1>
+            <p>totidum</p>
+        </div>
+
+        <div class="box  blue">
+            <p>74</p>
+            <h1>W</h1>
+            <p>tungston</p>
+        </div>
+
+        <div class="box  blue">
+            <p>75</p>
+            <h1>Re</h1>
+            <p>rthtium</p>
+        </div>
+
+        <div class="box  blue">
+            <p>76</p>
+            <h1>Os</h1>
+            <p>ostium</p>
+        </div>
+
+        <div class="box blue">
+            <p>77</p>
+            <h1>Ir</h1>
+            <p>indium</p>
+        </div>
+
+        <div class="box blue">
+            <p>78</p>
+            <h1>Pt</h1>
+            <p>platinum</p>
+        </div>
+
+        <div class="box blue">
+            <p>79</p>
+            <h1>Au</h1>
+            <p>gold</p>
+        </div>
+
+        <div class="box  blue">
+            <p>80</p>
+            <h1>Hg</h1>
+            <p>mercury</p>
+        </div>
+
+        <div class="box low-red">
+            <p>81</p>
+            <h1>TI</h1>
+            <p>tituinum</p>
+        </div>
+
+        <div class="box low-red">
+            <p>82</p>
+            <h1>Pb</h1>
+            <p>lead</p>
+        </div>
+
+        <div class="box low-red">
+            <p>83</p>
+            <h1>Bi</h1>
+            <p>biotrium</p>
+        </div>
+
+        <div class="box low-red">
+            <p>84</p>
+            <h1>Po</h1>
+            <p>potaium</p>
+        </div>
+
+        <div class="box green">
+            <p>85</p>
+            <h1>At</h1>
+            <p>astium</p>
+        </div>
+
+        <div class="box orange">
+            <p>86</p>
+            <h1>Rn</h1>
+            <p>radium</p>
+        </div>
+
+
+        <div class="box red">
+            <p>87</p>
+            <h1>Fr</h1>
+            <p>francium</p>
+        </div>
+
+        <div class="box orange">
+            <p>88</p>
+            <h1>Ra</h1>
+            <p>radium</p>
+        </div>
+
+        <div class="box ice-blue">
+            <p>89-103</p>
+            <h1></h1>
+            <p>actiniods</p>
+        </div>
+
+        <div class="box  blue">
+            <p>104</p>
+            <h1>Rf</h1>
+            <p>rutherfordium</p>
+        </div>
+
+        <div class="box  blue">
+            <p>105</p>
+            <h1>Db</h1>
+            <p>dubium</p>
+        </div>
+
+        <div class="box  blue">
+            <p>106</p>
+            <h1>Sg</h1>
+            <p>sodiumgsm</p>
+        </div>
+
+        <div class="box  blue">
+            <p>107</p>
+            <h1>Bh</h1>
+            <p>borhium</p>
+        </div>
+
+        <div class="box  blue">
+            <p>108</p>
+            <h1>Hs</h1>
+            <p>hassium</p>
+        </div>
+
+        <div class="box pink">
+            <p>109</p>
+            <h1>Mt</h1>
+            <p>methanium</p>
+        </div>
+
+        <div class="box pink">
+            <p>110</p>
+            <h1>Ds</h1>
+            <p>daimudtium</p>
+        </div>
+
+        <div class="box pink">
+            <p>111</p>
+            <h1>Rg</h1>
+            <p>ragonium</p>
+        </div>
+
+        <div class="box  blue">
+            <p>112</p>
+            <h1>Cn</h1>
+            <p>caopitum</p>
+        </div>
+
+        <div class="box pink">
+            <p>113</p>
+            <h1>Nh</h1>
+            <p>nutium</p>
+        </div>
+
+        <div class="box low-red">
+            <p>114</p>
+            <h1>FI</h1>
+            <p>fodium</p>
+        </div>
+
+        <div class="box pink">
+            <p>115</p>
+            <h1>Mc</h1>
+            <p>Mocodium</p>
+        </div>
+
+        <div class="box pink">
+            <p>116</p>
+            <h1>Lv</h1>
+            <p>livirium</p>
+        </div>
+
+        <div class="box pink">
+            <p>117</p>
+            <h1>Ts</h1>
+            <p>tatsdium</p>
+        </div>
+
+        <div class="box pink">
+            <p>118</p>
+            <h1>Og</h1>
+            <p>ogrosodium</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
